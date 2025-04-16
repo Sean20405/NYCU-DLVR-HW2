@@ -16,7 +16,7 @@ from utils import (
 )
 
 # !!! Remember to change this for each experiment !!!
-model_name = 'FasterRCNN_Res101_anchor'
+model_name = 'FasterRCNN_Res101_restart_anchor'
 
 args = parse_args(model_name)
 
@@ -124,7 +124,7 @@ def main():
             output['scores'] = output['scores'][keep]
             output['labels'] = output['labels'][keep]
 
-            plot_img_bbox(img, output)
+            plot_img_bbox(img, output, f'{args.image_id}.png')
     else:
         print('Please specify --train or --test')
 
