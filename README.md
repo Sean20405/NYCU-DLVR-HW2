@@ -61,6 +61,7 @@ You can also specify `--device` to set the GPU ID. For more information about al
 ![image](report/assets/val_acc.png)
 
 **Validation mAP curve.**
+
 ![image](report/assets/val_mAP.png)
 
 **Training loss curve.**
